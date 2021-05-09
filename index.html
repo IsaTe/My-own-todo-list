@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="sakura">
+        <div class="heart"></div>
+        <div class= "petal" id="petal-top"><div class="petal-border" id= "top-crown"></div></div> 
+        <div class= "petal" id="petal-leftmiddle"><div class="petal-border" id= "leftmiddle-crown"></div></div> 
+        <div class= "petal" id="petal-rightmiddle"><div class="petal-border" id="rightmiddle-crown"></div></div> 
+        <div class= "petal" id="petal-bottomleft"><div class="petal-border" id="bottomleft-crown"></div></div>     
+        <div class= "petal" id="petal-bottomright"><div class="petal-border" id="bottomright-crown"></div></div>
+        <div class= "petal" id="petal-bottom"><div class="petal-border" id="bottom-crown"></div></div>             
+        
+
+    </div>
+    <header>
+        <h1>IsaTe TODO List</h1>
+    </header>
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-check-circle"></i>
+        </button>
+        <div class="select">
+            <select name="todos"  class="filter-todo">
+                <option value="all">Toutes</option>
+                <option value="completed">Achevées</option>
+                <option value="uncompleted">A faire </option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>   
+    </div>
+    <script src="app.js"></script>  
+</body>
+</html>
